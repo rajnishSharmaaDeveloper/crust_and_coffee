@@ -39,14 +39,16 @@ export default function Header({
               className={`pill-btn ${activeTab === "menu" ? "active" : ""}`}
             >
               <UtensilsCrossed size={16} />
-              <span>Digital Menu</span>
+              <span className="pill-text-desktop">Digital Menu</span>
+              <span className="pill-text-mobile">Menu</span>
             </button>
             <button
               onClick={() => setActiveTab("qr")}
               className={`pill-btn ${activeTab === "qr" ? "active" : ""}`}
             >
               <QrCode size={16} />
-              <span>QR Standee</span>
+              <span className="pill-text-desktop">QR Standee</span>
+              <span className="pill-text-mobile">QR</span>
             </button>
           </div>
 

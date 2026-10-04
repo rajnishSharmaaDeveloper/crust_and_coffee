@@ -1717,21 +1717,10 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-size: 0.75rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.78rem;
   color: #8c786c;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.made-with-love {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.heart-icon {
-  color: #ef4444;
 }
 
 /* Empty search query state */

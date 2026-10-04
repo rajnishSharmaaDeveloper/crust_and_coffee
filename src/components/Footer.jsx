@@ -1,5 +1,5 @@
 import React from "react";
-import { Coffee, Phone, Wifi, MapPin, Heart } from "lucide-react";
+import { Coffee, Phone, Wifi, MapPin } from "lucide-react";
 import { CAFE_INFO } from "../data/menuData";
 
 export default function Footer() {
@@ -35,9 +35,6 @@ export default function Footer() {
 
       <div className="footer-bottom-bar">
         <span>© {new Date().getFullYear()} {CAFE_INFO.name} • {CAFE_INFO.tagline}</span>
-        <span className="made-with-love">
-          Digital QR Cafe Experience <Heart size={14} className="heart-icon" />
-        </span>
       </div>
     </footer>
   );

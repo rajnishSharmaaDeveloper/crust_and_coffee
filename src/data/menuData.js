@@ -2,7 +2,7 @@ export const CAFE_INFO = {
   name: "CRUST N COFFEE",
   tagline: "By Mittal",
   address: "Kisan Bazar , Gomti Nagar Railway Station, Lucknow, Uttar Pradesh 226010",
-  phone: "+91 98765 43210",
+  phone: "+91 95553 47966",
   wifi: "Password: coffee@123",
   currency: "₹",
 };

@@ -18,7 +18,7 @@ export default function Header({
           <div className="brand-logo-badge">
             <Coffee className="brand-icon" size={24} />
           </div>
-          <div>
+          <div className="brand-text-block">
             <div className="brand-title-wrap">
               <h1 className="brand-title">{CAFE_INFO.name}</h1>
               <span className="brand-tagline">{CAFE_INFO.tagline}</span>

@@ -130,6 +130,12 @@ body {
   box-shadow: 0 4px 12px rgba(31, 20, 14, 0.2);
 }
 
+.brand-text-block {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .brand-title-wrap {
   display: flex;
   align-items: baseline;
@@ -1891,34 +1897,96 @@ body {
 
   .header-top {
     padding: 8px 12px;
+    gap: 8px;
   }
 
   .header-search-bar {
     padding: 0 12px 10px;
   }
 
+  .brand-container {
+    gap: 8px;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
   .brand-logo-badge {
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
   }
 
   .brand-logo-badge svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .brand-text-block {
+    min-width: 0;
+    flex: 1 1 auto;
+    overflow: hidden;
+  }
+
+  .brand-title-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    min-width: 0;
+    line-height: 1.1;
+  }
+
+  .brand-title {
+    font-size: clamp(0.92rem, 3.2vw, 1.05rem);
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .brand-tagline {
+    font-size: 0.64rem;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .table-badge {
+    font-size: 0.65rem;
+    padding: 1px 6px;
+    margin-top: 2px;
+  }
+
+  .header-actions {
+    gap: 6px;
+    flex-shrink: 0;
   }
 
   .tab-pill-toggle {
     padding: 2px;
+    gap: 2px;
   }
 
   .pill-btn {
-    padding: 5px 10px;
-    font-size: 0.8rem;
+    padding: 5px 8px;
+    font-size: 0.76rem;
+    gap: 4px;
+  }
+
+  .pill-btn svg {
+    width: 14px;
+    height: 14px;
   }
 
   .cart-btn {
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .cart-btn svg {
+    width: 18px;
+    height: 18px;
   }
 
   .sub-filters-row {
@@ -1980,24 +2048,60 @@ body {
   }
 }
 
-/* Very Small Mobile Screens (320px - 375px: iPhone SE, Galaxy Fold cover) */
-@media (max-width: 380px) {
-  .brand-title-wrap {
-    gap: 4px;
+/* Very Small Mobile Screens (320px - 400px: iPhone SE, Galaxy Fold cover, compact Android) */
+@media (max-width: 400px) {
+  .header-top {
+    padding: 7px 10px;
+    gap: 6px;
+  }
+
+  .brand-container {
+    gap: 6px;
+  }
+
+  .brand-logo-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+  }
+
+  .brand-logo-badge svg {
+    width: 16px;
+    height: 16px;
   }
 
   .brand-title {
-    font-size: 0.98rem;
+    font-size: 0.88rem;
+    letter-spacing: 0.01em;
   }
 
   .brand-tagline {
-    font-size: 0.68rem;
+    font-size: 0.58rem;
+  }
+
+  .header-actions {
+    gap: 5px;
   }
 
   .pill-btn {
-    padding: 4px 8px;
-    font-size: 0.75rem;
-    gap: 4px;
+    padding: 4px 6px;
+    font-size: 0.72rem;
+    gap: 3px;
+  }
+
+  .pill-btn svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .cart-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .cart-btn svg {
+    width: 16px;
+    height: 16px;
   }
 
   .hero-banner {
@@ -2018,6 +2122,17 @@ body {
 
   .standee-brand-name {
     font-size: 1.15rem;
+  }
+}
+
+/* Ultra-compact screens (Galaxy Fold cover 320px) */
+@media (max-width: 340px) {
+  .pill-text-mobile {
+    display: none;
+  }
+
+  .pill-btn {
+    padding: 5px 6px;
   }
 }
 
